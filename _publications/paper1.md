@@ -1,9 +1,9 @@
 ---
 title: "Estimating the expansion and reduction of agricultural extent in Egypt using Landsat time series"
 collection: publications
-
+category: peerReviewed
 excerpt: 'Uses Landsat time series to map and analyze changes in agricultural extent in Egypt.'
-date: 2024
+date: 2024-01-01
 venue: 'International Journal of Applied Earth Observation and Geoinformation'
 paperurl: 'https://doi.org/10.1016/j.jag.2024.104141'
 citation: 'Bratley, K. H. & Woodcock, C. E. (2024). Estimating the expansion and reduction of agricultural extent in Egypt using Landsat time series. International Journal of Applied Earth Observation and Geoinformation, 133, 104141. https://doi.org/10.1016/j.jag.2024.104141'
