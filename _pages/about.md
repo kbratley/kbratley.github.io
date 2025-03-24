@@ -22,12 +22,6 @@ redirect_from:
   to learn more about my work.
 </p>
 
-  <!-- Contact / Location Info -->
-  <p style="margin-top: 1.5rem;">
-    <strong>Email:</strong> kbratley@bu.edu <br>
-    Boston University, 675 Commonwealth Ave, Boston, MA
-  </p>
-
   <!-- Two-Column Layout for Interests / Education -->
   <div style="
     display: flex;
