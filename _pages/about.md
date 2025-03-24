@@ -22,44 +22,58 @@ redirect_from:
 </p>
 
   <!-- Two-Column Layout for Interests / Education -->
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2rem;
-  ">
-    <!-- Left Column: Interests -->
-    <div style="flex: 1; min-width: 240px; margin-right: 2rem;">
-      <h2>Interests</h2>
-      <ul>
-        <li>Land System Science</li>
-        <li>Climate Change Research</li>
-        <li>Sustainable Development</li>
-      </ul>
-    </div>
-
-    <!-- Right Column: Education -->
-    <div style="flex: 1; min-width: 240px;">
-      <h2>Education</h2>
-     <ul style="list-style: none; padding-left: 0;">
-  <li style="margin-bottom: 1.5rem;">
-    <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white;"></i>
-    <strong>PhD in Forestry, 2013</strong><br>
-    <span style="font-size: 0.9em; color: #ccc;">University of Wisconsin-Madison (USA)</span>
-  </li>
-  <li style="margin-bottom: 1.5rem;">
-    <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white;"></i>
-    <strong>Diploma in Geography, 2009</strong><br>
-    <span style="font-size: 0.9em; color: #ccc;">Geography Department, Humboldt-Universität zu Berlin</span>
-  </li>
-  <li>
-    <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white;"></i>
-    <strong>ERASMUS Studies, 2005/2006</strong><br>
-    <span style="font-size: 0.9em; color: #ccc;">Universidad de Sevilla (Spain)</span>
-  </li>
-</ul>
-
-    </div>
+<div style="
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+">
+  <!-- Left Column: Interests -->
+  <div style="flex: 1; min-width: 240px; margin-right: 2rem;">
+    <h2>Interests</h2>
+    <ul>
+      <li>Land System Science</li>
+      <li>Climate Change Research</li>
+      <li>Sustainable Development</li>
+    </ul>
   </div>
+
+  <!-- Right Column: Education -->
+  <div style="flex: 1; min-width: 240px;">
+    <h2>Education</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: flex-start;">
+          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
+          <div>
+            <strong>PhD in Forestry, 2013</strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">University of Wisconsin-Madison (USA)</span>
+          </div>
+        </div>
+      </li>
+
+      <li style="margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: flex-start;">
+          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
+          <div>
+            <strong>Diploma in Geography, 2009</strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">Geography Department, Humboldt-Universität zu Berlin</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div style="display: flex; align-items: flex-start;">
+          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
+          <div>
+            <strong>ERASMUS Studies, 2005/2006</strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">Universidad de Sevilla (Spain)</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 <!-- END: Dark Section -->
+
 
