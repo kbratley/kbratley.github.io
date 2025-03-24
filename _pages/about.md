@@ -1,55 +1,66 @@
----
-permalink: /
-title: "I'm Kelsee Bratley, a PhD Candidate in the Department of Earth and Environment at Boston University"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+<!-- BEGIN: Dark Section -->
+<div style="
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+">
 
-I’m a land-use scientist in the final year of my PhD at Boston University, where I work under the guidance of [Curtis Woodcock](https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en). I plan to defend my dissertation in July 2025. My research focuses on the dynamic interactions between human-driven land cover change and climate change to develop innovative solutions to pressing environmental challenges. My work is interdisciplinary and highly collaborative, and I’m always open to engaging in new projects where I can apply my expertise in fresh and unfamiliar contexts. You can explore my [Research] and [Publications] for a more detailed overview of my work.
+  <!-- Main Intro Heading -->
+  <h1 style="margin-top: 0;">
+    I'm Kelsee Bratley, a PhD Candidate in the Department of Earth and Environment at Boston University
+  </h1>
 
+  <!-- Updated Intro Text -->
+  <p>
+    I’m a land-use scientist in the final year of my PhD at Boston University, where I work under the guidance of
+    <a href="https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en" style="color: #bbb;">
+      Curtis Woodcock
+    </a>.
+    I plan to defend my dissertation in July 2025. My research focuses on the dynamic interactions between
+    human-driven land cover change and climate change to develop innovative solutions to pressing environmental
+    challenges. My work is interdisciplinary and highly collaborative, and I’m always open to engaging in new projects
+    where I can apply my expertise in fresh and unfamiliar contexts. You can explore my
+    <a href="/research" style="color: #bbb;">Research</a> and
+    <a href="/publications" style="color: #bbb;">Publications</a>
+    for a more detailed overview of my work.
+  </p>
 
-<!-- Add this snippet right beneath your main content -->
+  <!-- Contact / Location Info -->
+  <p style="margin-top: 1.5rem;">
+    <strong>Email:</strong> kbratley@bu.edu <br>
+    <strong>Phone:</strong> +1 (555) 123-4567 <br>
+    Boston University, 675 Commonwealth Ave, Boston, MA
+  </p>
 
-<style>
-  /* Two column layout */
-  .columns {
+  <!-- Two-Column Layout for Interests / Education -->
+  <div style="
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: space-between;
     margin-top: 2rem;
-  }
-  .column {
-    flex: 1;
-    min-width: 200px;
-  }
-  /* Education bullet points styled as graduation caps */
-  .education ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0;
-  }
-  .education ul li::before {
-    content: "🎓";
-    margin-right: 8px;
-  }
-</style>
+  ">
+    <!-- Left Column: Interests -->
+    <div style="flex: 1; min-width: 240px; margin-right: 2rem;">
+      <h2>Interests</h2>
+      <ul>
+        <li>Land System Science</li>
+        <li>Climate Change Research</li>
+        <li>Sustainable Development</li>
+      </ul>
+    </div>
 
-<div class="columns">
-  <div class="column interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>Land-use analysis</li>
-      <li>Climate change research</li>
-      <li>Sustainable development</li>
-    </ul>
-  </div>
-  <div class="column education">
-    <h2>Education</h2>
-    <ul>
-      <li>B.Sc. in Environmental Science</li>
-      <li>M.Sc. in Geography</li>
-      <li>Ph.D. Candidate at Boston University</li>
-    </ul>
+    <!-- Right Column: Education -->
+    <div style="flex: 1; min-width: 240px;">
+      <h2>Education</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>🎓 B.Sc. in Environmental Science</li>
+        <li>🎓 M.Sc. in Geography</li>
+        <li>🎓 Ph.D. Candidate at Boston University</li>
+      </ul>
+    </div>
   </div>
 </div>
+<!-- END: Dark Section -->
+
