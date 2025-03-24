@@ -46,8 +46,8 @@ redirect_from:
         <div style="display: flex; align-items: flex-start;">
           <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
           <div>
-            <strong>PhD in Forestry, 2013</strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">University of Wisconsin-Madison (USA)</span>
+            <strong>PhD in Earth and Environment, Expected July 2025 </strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
           </div>
         </div>
       </li>
@@ -56,8 +56,8 @@ redirect_from:
         <div style="display: flex; align-items: flex-start;">
           <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
           <div>
-            <strong>Diploma in Geography, 2009</strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">Geography Department, Humboldt-Universität zu Berlin</span>
+            <strong>MA in Remote Sensing and GIS, 2019</strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
           </div>
         </div>
       </li>
@@ -66,8 +66,8 @@ redirect_from:
         <div style="display: flex; align-items: flex-start;">
           <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
           <div>
-            <strong>ERASMUS Studies, 2005/2006</strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">Universidad de Sevilla (Spain)</span>
+            <strong>BS in Environmental Science, 2018</strong><br>
+            <span style="font-size: 0.9em; color: #ccc;">University of North Carolina Wilmington</span>
           </div>
         </div>
       </li>
