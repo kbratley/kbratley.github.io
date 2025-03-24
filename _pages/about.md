@@ -25,7 +25,6 @@ redirect_from:
   <!-- Contact / Location Info -->
   <p style="margin-top: 1.5rem;">
     <strong>Email:</strong> kbratley@bu.edu <br>
-    <strong>Phone:</strong> +1 (555) 123-4567 <br>
     Boston University, 675 Commonwealth Ave, Boston, MA
   </p>
 
