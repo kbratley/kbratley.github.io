@@ -7,25 +7,20 @@
   border-radius: 6px;
 ">
 
-  <!-- Main Intro Heading -->
-  <h1 style="margin-top: 0;">
-    I'm Kelsee Bratley, a PhD Candidate in the Department of Earth and Environment at Boston University
-  </h1>
-
   <!-- Updated Intro Text -->
-  <p>
-    I’m a land-use scientist in the final year of my PhD at Boston University, where I work under the guidance of
-    <a href="https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en" style="color: #bbb;">
-      Curtis Woodcock
-    </a>.
-    I plan to defend my dissertation in July 2025. My research focuses on the dynamic interactions between
-    human-driven land cover change and climate change to develop innovative solutions to pressing environmental
-    challenges. My work is interdisciplinary and highly collaborative, and I’m always open to engaging in new projects
-    where I can apply my expertise in fresh and unfamiliar contexts. You can explore my
-    <a href="/research" style="color: #bbb;">Research</a> and
-    <a href="/publications" style="color: #bbb;">Publications</a>
-    for a more detailed overview of my work.
-  </p>
+ <p>
+  My name is Kelsee Bratley, and I am a PhD candidate in the Department of Earth and Environment at Boston University, where I study agricultural and ecosystem dynamics using remote sensing and statistical approaches. I am advised by 
+  <a href="https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en" style="color: #bbb;">
+    Curtis Woodcock
+  </a>, and I plan to defend my dissertation in July 2025. 
+
+  My research explores the complex interactions between human-driven land cover change and climate change, with the aim of developing innovative solutions to urgent environmental challenges. My work is interdisciplinary and deeply collaborative, and I’m always excited to contribute my expertise to new and unfamiliar contexts. 
+
+  You can explore my 
+  <a href="/research" style="color: #bbb;">Research</a> and 
+  <a href="/publications" style="color: #bbb;">Publications</a> 
+  to learn more about my work.
+</p>
 
   <!-- Contact / Location Info -->
   <p style="margin-top: 1.5rem;">
