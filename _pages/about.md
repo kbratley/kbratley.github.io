@@ -1,11 +1,11 @@
-<!-- BEGIN: Dark Section -->
-<div style="
-  background-color: #1f1f1f;
-  color: #ffffff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 6px;
-">
+---
+permalink: /
+title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
   <!-- Updated Intro Text -->
  <p>
