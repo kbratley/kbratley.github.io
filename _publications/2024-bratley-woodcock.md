@@ -2,7 +2,7 @@
 title: "Estimating the expansion and reduction of agricultural extent in Egypt using Landsat time series"
 collection: publications
 category: peerReviewed
-authors: 'Kelsee Bratley & Curtis Woodcock'
+authors: '<u>Kelsee Bratley</u> & Curtis Woodcock'
 date: 2024-09-01
 venue: 'International Journal of Applied Earth Observation and Geoinformation'
 paperurl: 'https://doi.org/10.1016/j.jag.2024.104141'
