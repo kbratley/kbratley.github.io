@@ -2,7 +2,6 @@
 title: "Egypt Land Cover Interactive Tool"
 excerpt: "Explore land cover dynamics in Egypt using my interactive Google Earth Engine tool.<br/><img src='/images/egypt-tool-preview.png'>"
 collection: portfolio
-layout: default
 ---
 
 This interactive tool was built using **Google Earth Engine** and visualizes land cover change across Egypt.  
