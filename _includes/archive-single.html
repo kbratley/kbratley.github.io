@@ -14,42 +14,53 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-
-    {% comment %}
-      Display a thumbnail if `post.image` is defined
-    {% endcomment %}
+    
+    {# 1. Thumbnail (applies to both publications & research if `post.image` is defined) #}
     {% if post.image %}
       <div class="archive__item-teaser" style="float: left; margin-right: 1rem; max-width: 120px;">
         <img src="{{ post.image | prepend: base_path }}" alt="Thumbnail" style="width: 100%;">
       </div>
     {% endif %}
 
-    {%- comment -%}
-      1. REMOVE TITLE LINKS:
-      Instead of wrapping `title` in <a> tags, just display the text directly.
-    {%- endcomment -%}
+    {# 2. Title: Publications get a link, Research gets plain text #}
     <h2 class="archive__item-title" itemprop="headline">
-      {{ title }}
+      {% if post.collection == 'publications' %}
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a>
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+            <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
+            <span class="sr-only">Permalink</span>
+          </a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      {% else %}
+        {{ title }}
+      {% endif %}
     </h2>
 
+    {# Optional: read_time for both, if you use that #}
     {% if post.read_time %}
       <p class="page__meta">
-        <i class="fa fa-clock" aria-hidden="true"></i> 
+        <i class="fa fa-clock" aria-hidden="true"></i>
         {% include read-time.html %}
       </p>
     {% endif %}
 
+    {# 3. Additional info by collection #}
     {% if post.collection == 'teaching' %}
       <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+
     {% elsif post.collection == 'publications' %}
       {% if post.authors %}
         <p class="pub-authors">{{ post.authors }}</p>
       {% endif %}
       <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+
     {% elsif post.date %}
       <p class="page__date">
         <strong>
-          <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
+          <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
           {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
         </strong>
         <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
@@ -58,17 +69,26 @@
       </p>
     {% endif %}
 
-    {%- comment -%}
-      2. Show FULL content (if desired) or keep excerpt commented out.
-         Right now, we show the entire body from the .md file:
-    {%- endcomment -%}
-    <div class="archive__item-full-content" itemprop="description">
-      {{ post.content }}
-    </div>
+    {# 4. Content Handling: Publications show excerpt, Research shows full text #}
+    {% if post.collection == 'research' %}
+      {# Show FULL content for research #}
+      <div class="archive__item-full-content" itemprop="description">
+        {{ post.content }}
+      </div>
+      <hr style="margin: 2rem 0;">
+    {% elsif post.collection == 'publications' %}
+      {# Show EXCERPT for publications #}
+      {% if post.excerpt and site.read_more != 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% elsif post.excerpt and site.read_more == 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description">
+          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+          <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong>
+        </p>
+      {% endif %}
+    {% endif %}
 
-    {% comment %}
-      Citation & DOI (and optional slides)
-    {% endcomment %}
+    {# 5. Citation & DOI (and optional slides) #}
     {% if post.citation and post.paperurl and post.slidesurl %}
       <p>
         Recommended citation: {{ post.citation }}<br />
@@ -98,9 +118,4 @@
     {% endif %}
     
   </article>
-
-  {%- comment -%}
-    3. Add a horizontal rule to separate each project visually
-  {%- endcomment -%}
-  <hr style="margin: 2rem 0;">
 </div>
