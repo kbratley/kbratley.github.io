@@ -2,7 +2,7 @@
 title: "Demystifying LandTrendr and CCDC Temporal Segmentation"
 collection: publications
 category: peerReviewed
-excerpt: 'Clarifies the differences and applications of LandTrendr and CCDC for temporal segmentation.'
+excerpt: 'CImproved access to remotely sensed imagery and time series algorithms in combination with increased availability of cloud computing resources and platforms such as Google Earth Engine have significantly expanded the community of users processing and analyzing time series of satellite observations...'
 date: 2022-01-01
 venue: 'International Journal of Applied Earth Observation and Geoinformation'
 paperurl: 'https://doi.org/10.1016/j.jag.2022.102806'
