@@ -1,5 +1,5 @@
 ---
-title: "Egypt Land Cover Interactive Tool"
+title: "Mapping Agricultural Change"
 collection: portfolio
 ---
 
