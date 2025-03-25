@@ -63,13 +63,13 @@
     {% endif %}
 
     {% comment %}
-      Remove or comment out excerpt code so the abstract doesn't show on the listing:
+      1) We've commented out the excerpt code.
+      2) Now we show the FULL content from the Markdown file:
     {% endcomment %}
-    {%- comment -%}
-    {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% endif %}
-    {%- endcomment -%}
+
+    <div class="archive__item-full-content" itemprop="description">
+      {{ post.content }}
+    </div>
 
     {% comment %}
       Citation & DOI (and optional slides)
