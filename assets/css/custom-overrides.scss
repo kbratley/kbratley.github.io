@@ -1,11 +1,17 @@
 .archive__item-title {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem !important; /* More specific and uses !important */
 }
 
 .pub-authors {
-  margin-top: 0;
-  margin-bottom: 0.3rem;
+  margin-top: 0 !important;
+  margin-bottom: 0.2rem !important;
   font-size: 0.9em;
   font-style: italic;
   color: #666;
+}
+
+/* Also reduce space for the next paragraph (venue info) */
+.archive__item p {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
 }
