@@ -1,18 +1,12 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
     {% if post.image %}
@@ -21,7 +15,7 @@
       </div>
     {% endif %}
 
-    <!-- Clickable title -->
+    <!-- Clickable title (no excerpt) -->
     <h2 class="archive__item-title" itemprop="headline">
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
@@ -39,15 +33,12 @@
 
     <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
 
-    <!-- Show excerpt (short summary) -->
-    {% if post.excerpt and site.read_more != 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-        <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong>
-      </p>
-    {% endif %}
+    <!-- No excerpt shown, just an optional "Read more" link -->
+    <p>
+      <strong>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>
+      </strong>
+    </p>
 
     {% comment %}
       Citation & DOI (and optional slides)
@@ -63,22 +54,9 @@
         Recommended citation: {{ post.citation }}<br />
         <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
       </p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>
-        Recommended citation: {{ post.citation }}<br />
-        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
-      </p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl %}
-      <p>
-        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
-      </p>
-    {% elsif post.slidesurl %}
-      <p>
-        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
-      </p>
     {% endif %}
-    
+
   </article>
 </div>
