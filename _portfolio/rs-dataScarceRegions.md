@@ -1,6 +1,6 @@
 ---
 title: "Remote Sensing for Agriculture in Data-Scarce Regions"
-collection: research
+collection: portfolio
 ---
 
 Another key focus of my work is the application of remote sensing and statistical methods in areas with limited data availability. In collaboration with the IMF, the UN World Food Programme, and Digital Earth Africa, I developed Mozambique’s first national-scale map of agricultural extent, leveraging machine learning for robust land-cover classification.
