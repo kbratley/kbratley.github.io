@@ -15,7 +15,7 @@
       </div>
     {% endif %}
 
-    <!-- Clickable title (no excerpt) -->
+    <!-- Clickable title -->
     <h2 class="archive__item-title" itemprop="headline">
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
@@ -33,7 +33,7 @@
 
     <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
 
-    <!-- No excerpt shown, just an optional "Read more" link -->
+    <!-- No excerpt shown, just a "Read more" link -->
     <p>
       <strong>
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>
@@ -54,8 +54,21 @@
         Recommended citation: {{ post.citation }}<br />
         <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
       </p>
+    {% elsif post.citation and post.slidesurl %}
+      <p>
+        Recommended citation: {{ post.citation }}<br />
+        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+      </p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
+    {% elsif post.paperurl %}
+      <p>
+        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
+      </p>
+    {% elsif post.slidesurl %}
+      <p>
+        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+      </p>
     {% endif %}
 
   </article>
