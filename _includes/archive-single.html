@@ -24,16 +24,12 @@
       </div>
     {% endif %}
 
+    {%- comment -%}
+      1. REMOVE TITLE LINKS:
+      Instead of wrapping `title` in <a> tags, just display the text directly.
+    {%- endcomment -%}
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-          <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
-          <span class="sr-only">Permalink</span>
-        </a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
+      {{ title }}
     </h2>
 
     {% if post.read_time %}
@@ -62,11 +58,10 @@
       </p>
     {% endif %}
 
-    {% comment %}
-      1) We've commented out the excerpt code.
-      2) Now we show the FULL content from the Markdown file:
-    {% endcomment %}
-
+    {%- comment -%}
+      2. Show FULL content (if desired) or keep excerpt commented out.
+         Right now, we show the entire body from the .md file:
+    {%- endcomment -%}
     <div class="archive__item-full-content" itemprop="description">
       {{ post.content }}
     </div>
@@ -103,4 +98,9 @@
     {% endif %}
     
   </article>
+
+  {%- comment -%}
+    3. Add a horizontal rule to separate each project visually
+  {%- endcomment -%}
+  <hr style="margin: 2rem 0;">
 </div>
