@@ -1,7 +1,5 @@
 ---
 title: "Remote Sensing for Agriculture in Data-Scarce Regions"
-layout: default
-date: 2025-03-25
 collection: research
 ---
 
