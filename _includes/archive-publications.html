@@ -1,0 +1,84 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    {% if post.image %}
+      <div class="archive__item-teaser" style="float: left; margin-right: 1rem; max-width: 120px;">
+        <img src="{{ post.image | prepend: base_path }}" alt="Thumbnail" style="width: 100%;">
+      </div>
+    {% endif %}
+
+    <!-- Clickable title -->
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+
+    {% if post.read_time %}
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        {% include read-time.html %}
+      </p>
+    {% endif %}
+
+    {% if post.authors %}
+      <p class="pub-authors">{{ post.authors }}</p>
+    {% endif %}
+
+    <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+
+    <!-- Show excerpt (short summary) -->
+    {% if post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+        <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong>
+      </p>
+    {% endif %}
+
+    {% comment %}
+      Citation & DOI (and optional slides)
+    {% endcomment %}
+    {% if post.citation and post.paperurl and post.slidesurl %}
+      <p>
+        Recommended citation: {{ post.citation }}<br />
+        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a> | 
+        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+      </p>
+    {% elsif post.citation and post.paperurl %}
+      <p>
+        Recommended citation: {{ post.citation }}<br />
+        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
+      </p>
+    {% elsif post.citation and post.slidesurl %}
+      <p>
+        Recommended citation: {{ post.citation }}<br />
+        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+      </p>
+    {% elsif post.citation %}
+      <p>Recommended citation: {{ post.citation }}</p>
+    {% elsif post.paperurl %}
+      <p>
+        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
+      </p>
+    {% elsif post.slidesurl %}
+      <p>
+        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+      </p>
+    {% endif %}
+    
+  </article>
+</div>
