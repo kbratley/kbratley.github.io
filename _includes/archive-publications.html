@@ -6,70 +6,64 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+<!-- Outer container for horizontal alignment -->
+<div class="{{ include.type | default: "list" }}__item" style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+  
+  <!-- Thumbnail (left column) -->
+  {% if post.image %}
+    <div style="flex: 0 0 auto; margin-right: 1rem; max-width: 120px;">
+      <img src="{{ post.image | prepend: base_path }}" alt="Thumbnail" style="width: 100%;">
+    </div>
+  {% endif %}
 
-    {% if post.image %}
-      <div class="archive__item-teaser" style="float: left; margin-right: 1rem; max-width: 120px;">
-        <img src="{{ post.image | prepend: base_path }}" alt="Thumbnail" style="width: 100%;">
-      </div>
-    {% endif %}
+  <!-- Text block (right column) -->
+  <div style="flex: 1 1 auto;">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <!-- Clickable title -->
+      <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0;">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      </h2>
 
-    <!-- Clickable title -->
-    <h2 class="archive__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h2>
+      <!-- Optional read time -->
+      {% if post.read_time %}
+        <p class="page__meta">
+          <i class="fa fa-clock" aria-hidden="true"></i>
+          {% include read-time.html %}
+        </p>
+      {% endif %}
 
-    {% if post.read_time %}
-      <p class="page__meta">
-        <i class="fa fa-clock" aria-hidden="true"></i>
-        {% include read-time.html %}
+      <!-- Authors -->
+      {% if post.authors %}
+        <p class="pub-authors" style="margin: 0;">
+          {{ post.authors }}
+        </p>
+      {% endif %}
+
+      <!-- Venue & Date -->
+      <p style="margin: 0;">
+        <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
-    {% endif %}
 
-    {% if post.authors %}
-      <p class="pub-authors">{{ post.authors }}</p>
-    {% endif %}
-
-    <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-
-    <!-- No excerpt shown, just a "Read more" link -->
-    <p>
-      <strong>
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>
-      </strong>
-    </p>
-
-    {% comment %}
-      Citation & DOI (and optional slides)
-    {% endcomment %}
-    {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>
-        Recommended citation: {{ post.citation }}<br />
-        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a> | 
-        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
-      </p>
-    {% elsif post.citation and post.paperurl %}
-      <p>
-        Recommended citation: {{ post.citation }}<br />
-        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
-      </p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>
-        Recommended citation: {{ post.citation }}<br />
-        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
-      </p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl %}
-      <p>
-        <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
-      </p>
-    {% elsif post.slidesurl %}
-      <p>
-        <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
-      </p>
-    {% endif %}
-
-  </article>
+      <!-- Optional: citation, DOI button, slides link, etc. -->
+      {% if post.citation or post.paperurl or post.slidesurl %}
+        <p style="margin-top: 0.5rem;">
+          {% if post.citation %}
+            Recommended citation: {{ post.citation }}<br />
+          {% endif %}
+          
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" class="btn btn-dark" target="_blank">DOI</a>
+          {% endif %}
+          
+          {% if post.slidesurl %}
+            {% if post.paperurl %} | {% endif %}
+            <a href="{{ post.slidesurl }}" class="btn btn-dark" target="_blank">Download Slides</a>
+          {% endif %}
+        </p>
+      {% endif %}
+      
+    </article>
+  </div>
 </div>
+
