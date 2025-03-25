@@ -2,7 +2,6 @@
 title: "Broad-Area Search of New Construction Using Time Series Analysis"
 collection: publications
 category: peerReviewed
-excerpt: 'Detects new construction activities using Landsat and Sentinel-2 time series.'
 date: 2024-01-01
 venue: 'Science of Remote Sensing'
 paperurl: 'https://doi.org/10.1016/j.srs.2024.100138'
