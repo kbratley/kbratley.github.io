@@ -8,17 +8,12 @@ redirect_from:
 
   <!-- Updated Intro Text -->
  <p>
-  My name is Kelsee Bratley, and I am a PhD candidate in the Department of Earth and Environment at Boston University, where I study agricultural and ecosystem dynamics using remote sensing and statistical approaches. I am advised by 
+ I’m <b>Kelsee Bratley</b>, a PhD candidate in the Department of Earth & Environment at Boston University, where I use remote sensing and statistical methods to investigate agricultural and ecosystem dynamics. Under the guidance of
   <a href="https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en" style="color: #bbb;">
-    Curtis Woodcock
-  </a>, and I plan to defend my dissertation in July 2025. 
-
-  My research explores the complex interactions between human-driven land cover change and climate change, with the aim of developing innovative solutions to urgent environmental challenges. My work is interdisciplinary and deeply collaborative, and I’m always excited to contribute my expertise to new and unfamiliar contexts. 
-
-  You can explore my 
+    Curtis Woodcock</a>, and I plan to defend my dissertation in July 2025. I plan to defend my dissertation in July 2025. My research focuses on the complex interactions between land cover change driven by human activity and a shifting climate, all with the goal of designing innovative solutions to pressing environmental challenges. I’m passionate about interdisciplinary, collaborative work and love bringing my expertise to new contexts. Feel free to explore my 
   <a href="/research" style="color: #bbb;">Research</a> and 
   <a href="/publications" style="color: #bbb;">Publications</a> 
-  to learn more about my work.
+  pages to learn more!
 </p>
 
   <!-- Two-Column Layout for Interests / Education -->
@@ -39,41 +34,42 @@ redirect_from:
     </ul>
   </div>
 
-  <!-- Right Column: Education -->
-  <div style="flex: 1; min-width: 240px;">
-    <h2>Education</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li style="margin-bottom: 1.5rem;">
-        <div style="display: flex; align-items: flex-start;">
-          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
-          <div>
-            <strong>PhD in Earth and Environment, Expected July 2025 </strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
-          </div>
+<!-- Right Column: Education -->
+<div style="flex: 1; min-width: 240px;">
+  <h2>Education</h2>
+  <ul style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 1.5rem;">
+      <div style="display: flex; align-items: flex-start;">
+        <i class="fas fa-graduation-cap" style="margin-right: 10px; color: #888; margin-top: 3px;"></i>
+        <div>
+          <strong>PhD in Earth and Environment, Expected July 2025</strong><br>
+          <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
         </div>
-      </li>
+      </div>
+    </li>
 
-      <li style="margin-bottom: 1.5rem;">
-        <div style="display: flex; align-items: flex-start;">
-          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
-          <div>
-            <strong>MA in Remote Sensing and GIS, 2019</strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
-          </div>
+    <li style="margin-bottom: 1.5rem;">
+      <div style="display: flex; align-items: flex-start;">
+        <i class="fas fa-graduation-cap" style="margin-right: 10px; color: #888; margin-top: 3px;"></i>
+        <div>
+          <strong>MA in Remote Sensing and GIS, 2019</strong><br>
+          <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
         </div>
-      </li>
+      </div>
+    </li>
 
-      <li>
-        <div style="display: flex; align-items: flex-start;">
-          <i class="fas fa-graduation-cap" style="margin-right: 10px; color: white; margin-top: 3px;"></i>
-          <div>
-            <strong>BS in Environmental Science, 2018</strong><br>
-            <span style="font-size: 0.9em; color: #ccc;">University of North Carolina Wilmington</span>
-          </div>
+    <li>
+      <div style="display: flex; align-items: flex-start;">
+        <i class="fas fa-graduation-cap" style="margin-right: 10px; color: #888; margin-top: 3px;"></i>
+        <div>
+          <strong>BS in Environmental Science, 2018</strong><br>
+          <span style="font-size: 0.9em; color: #ccc;">University of North Carolina Wilmington</span>
         </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
 </div>
 <!-- END: Dark Section -->
 
