@@ -28,9 +28,8 @@ redirect_from:
     <h2>Interests</h2>
     <ul>
       <li>Agriculture Mapping and Monitoring</li>
-      <li>Climate Change Research</li>
-      <li>Conservation Ecology</li>
       <li>Land System Science</li>
+      <li>Conservation Ecology</li>
     </ul>
   </div>
 
