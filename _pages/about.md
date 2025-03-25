@@ -34,7 +34,8 @@ redirect_from:
     <ul>
       <li>Agriculture Mapping and Monitoring</li>
       <li>Climate Change Research</li>
-      <li>Sustainable Development</li>
+      <li>Conservation Ecology</li>
+      <li>Land System Science</li>
     </ul>
   </div>
 
