@@ -81,7 +81,7 @@ publication_category:
   forthcoming:
     title: 'Forthcoming'  
   nonPeerReviewed:
-    title: 'Non-Peer-Reviewed'
+    title: 'White Paper'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
