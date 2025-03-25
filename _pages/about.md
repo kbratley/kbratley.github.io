@@ -11,7 +11,7 @@ redirect_from:
  I’m <b>Kelsee Bratley</b>, a PhD candidate in the Department of Earth & Environment at Boston University, where I use remote sensing and statistical methods to investigate agricultural and ecosystem dynamics. Under the guidance of
   <a href="https://scholar.google.com/citations?user=vf8DeC4AAAAJ&hl=en" style="color: #bbb;">
     Curtis Woodcock</a>, and I plan to defend my dissertation in July 2025. I plan to defend my dissertation in July 2025. My research focuses on the complex interactions between land cover change driven by human activity and a shifting climate, all with the goal of designing innovative solutions to pressing environmental challenges. I’m passionate about interdisciplinary, collaborative work and love bringing my expertise to new contexts. Feel free to explore my 
-  <a href="/research" style="color: #bbb;">Research</a> and 
+  <a href="/portfolio" style="color: #bbb;">Research</a> and 
   <a href="/publications" style="color: #bbb;">Publications</a> 
   pages to learn more!
 </p>
