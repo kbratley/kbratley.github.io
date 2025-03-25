@@ -5,7 +5,8 @@ category: peerReviewed
 date: 2023-01-01
 venue: 'Remote Sensing of Environment'
 paperurl: 'https://doi.org/10.1016/j.rse.2023.113626'
-excerpt: 'The ability to detect forest disturbance rapidly relies heavily on the frequency of usable satellite observations...'
+authors: 'Xiaojing Tang, Kelsee Bratley, Kangjoon Cho, Eric Bullock, Pontus Olofsson, & Curtis Woodcock'
+
 
 ---
 
