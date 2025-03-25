@@ -32,7 +32,7 @@ redirect_from:
   <div style="flex: 1; min-width: 240px; margin-right: 2rem;">
     <h2>Interests</h2>
     <ul>
-      <li>Land System Science</li>
+      <li>Agriculture Mapping and Monitoring</li>
       <li>Climate Change Research</li>
       <li>Sustainable Development</li>
     </ul>
