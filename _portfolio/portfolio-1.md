@@ -1,7 +1,12 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Egypt Land Cover Interactive Tool"
+excerpt: "Explore land cover dynamics in Egypt using my interactive Google Earth Engine tool.<br/><img src='/images/egypt-tool-preview.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This interactive tool was built using **Google Earth Engine** and visualizes land cover change across Egypt.  
+Click the link below to explore the full app:
+
+👉 [Launch the Interactive Tool](https://kelseebratley.users.earthengine.app/view/egypt-land-cover-interactive-tool)
+
+You can zoom, pan, and interact with the data directly in the app.
