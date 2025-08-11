@@ -22,8 +22,8 @@ repository               : "kbratley.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "1603509392809.jpeg"
-  name             : "Kelsee Bratley"
+  avatar           : "Bratley_Headshot.jpeg"
+  name             : "Kelsee Bratley, PhD"
   pronouns         : "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
   location         : "Boston, MA"
