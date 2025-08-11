@@ -1,5 +1,5 @@
 ---
-title: "Mapping Agricultural Change"
+title: "Agricultural Monitoring Solutions"
 collection: portfolio
 ---
 
