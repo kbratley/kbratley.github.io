@@ -39,7 +39,7 @@ pages to learn more!
       <div style="display: flex; align-items: flex-start;">
         <i class="fas fa-graduation-cap" style="margin-right: 10px; color: #888; margin-top: 3px;"></i>
         <div>
-          <strong>PhD in Earth and Environment, Expected July 2025</strong><br>
+          <strong>PhD in Earth and Environment, August 2025</strong><br>
           <span style="font-size: 0.9em; color: #ccc;">Boston University</span>
         </div>
       </div>
