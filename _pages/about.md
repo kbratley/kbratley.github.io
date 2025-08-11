@@ -25,9 +25,9 @@ pages to learn more!
   <div style="flex: 1; min-width: 240px; margin-right: 2rem;">
     <h2>Interests</h2>
     <ul>
-      <li>Agriculture Mapping and Monitoring</li>
-      <li>Land System Science</li>
-      <li>Conservation Ecology</li>
+      <li>Remote Sensing Applications</li>
+      <li>Agricultural and Environmental Monitoring</li>
+      <li>Environmental Data Analysis</li>
     </ul>
   </div>
 
