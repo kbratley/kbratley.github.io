@@ -3,6 +3,6 @@ title: "Mapping Agricultural Change"
 collection: portfolio
 ---
 
-My research examines how farmland expansions, reclamation projects, and abandonment shape environmental systems. In Egypt, I generated the first national-scale land-cover and land-use change map, which revealed both newly cultivated areas in former desert regions and unexpected farmland abandonment. These findings offer critical insights into how urbanization, policy decisions, and ecological factors collectively influence agricultural viability and sustainability. Check out the results through [this interactive app](https://kelseebratley.users.earthengine.app/view/egypt-land-cover-interactive-tool), built using Google Earth Engine to visualize land cover change across Egypt.
+Developed comprehensive monitoring systems to track farmland dynamics and support land management decisions across diverse environments. In Egypt, I created the first national-scale agricultural change mapping system, revealing critical patterns of expansion in desert regions and unexpected abandonment in traditional farming areas. This analysis provided actionable insights for policymakers addressing urbanization pressures and agricultural sustainability challenges. See the results in [this interactive app](https://kelseebratley.users.earthengine.app/view/egypt-land-cover-interactive-tool) for exploring Egypt's agricultural change patterns.
 
 ![GEE App Screenshot](/images/gee-app-screenshot.png)
