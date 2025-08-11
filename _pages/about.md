@@ -8,7 +8,7 @@ redirect_from:
 
   <!-- Updated Intro Text -->
 <p>
-I'm <b>Kelsee Bratley</b>, a geospatial developer with consulting experience specializing in remote sensing and statistical analysis for agricultural and ecosystem monitoring. I recently completed my PhD in Earth & Environment at Boston University, where I developed advanced data science methods to solve complex spatial challenges for government agencies, international organizations, and research institutions. My work focuses on translating technical geospatial solutions into actionable insights for decision-makers across diverse sectors. I'm passionate about collaborative problem-solving and love bringing my expertise to new contexts. Feel free to explore my 
+I'm <b>Kelsee Bratley</b>, a geospatial developer with consulting experience specializing in remote sensing and statistical analysis for agricultural and ecosystem monitoring. I recently completed my PhD in Earth & Environment at Boston University, specializing in remote sensing applications for agricultural and environmental monitoring. My work has supported decision-making for organizations ranging from the IMF in Mozambique to conservation managers in U.S. National Parks. I'm passionate about collaborative problem-solving and love bringing my expertise to new contexts. Feel free to explore my 
 <a href="/portfolio" style="color: #bbb;">Research</a> and 
 <a href="/publications" style="color: #bbb;">Publications</a> 
 pages to learn more!
