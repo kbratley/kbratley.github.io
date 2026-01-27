@@ -27,8 +27,8 @@ author:
   pronouns         : "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
   location         : "Boston, MA"
-  employer         : "Boston University"
-  uri              : # URL
+  employer         : "Verra"
+  uri              : https://verra.org/
   email            : "kbratley@bu.edu" 
 
   # Academic websites
